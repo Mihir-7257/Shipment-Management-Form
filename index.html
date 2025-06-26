@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Shipment Management Form</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+    label {
+      display: inline-block;
+      width: 200px;
+    }
+    input {
+      padding: 5px;
+      margin-bottom: 10px;
+      width: 200px;
+    }
+    button {
+      padding: 6px 12px;
+      margin-right: 10px;
+      background-color: aquamarine;
+      
+    }
+    
+  </style>
+</head>
+<body>
+
+  <h2>Shipment Management Form</h2>
+
+  <form id="shipmentForm"> 
+    <label>Shipment Number: </label>
+    <input type="text" id="shipmentNo"><br>
+
+    <label>Description:</label>
+    <input type="text" id="description" disabled><br>
+
+    <label>Source:</label>
+    <input type="text" id="source" disabled><br>
+
+    <label>Destination:</label>
+    <input type="text" id="destination" disabled><br>
+
+    <label>Shipping Date:</label>
+    <input type="date" id="shippingDate" disabled><br>
+
+    <label>Expected Delivery Date:</label>
+    <input type="date" id="expectedDeliveryDate" disabled><br><br>
+
+    <button type="button" id="saveBtn" disabled>Save</button>
+    <button type="button" id="updateBtn" disabled>Update</button>
+    <button type="button" id="resetBtn">Reset</button>
+  </form>
+
+</body>
+</html>
